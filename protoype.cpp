@@ -5,7 +5,7 @@ using namespace std;
 void DisplayMenu();
 float Area(const float Radius);
 float Area(const float Length,const float Widht);
-float Area(double based,double high);
+double Area(double based,double high);
 int main(){
 	char Choice;
 	bool Flag = true;
@@ -33,6 +33,7 @@ cout<<"Enter based :";
 cin>>based;
 cout<<"Enter high : ";
 cin>>high;
+cout << "Area of triangle = " << fixed;
 cout<<setprecision(2)<<Area(based,high);
 
 }
@@ -53,7 +54,7 @@ float Area(const float Length, const float Widht)
 {
 return(Length * Widht);
 }
-float Area(double based,double high){
+double Area(double based,double high){
 return(0.5*based*high);
 }
 void DisplayMenu()
